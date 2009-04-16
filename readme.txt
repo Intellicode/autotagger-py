@@ -1,1 +1,1 @@
-Python port of the autotagger project.
+Python port of the autotagger project. http://code.google.com/p/autotags/
