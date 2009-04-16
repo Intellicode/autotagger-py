@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <h1>Automatically generate tags for text</h1>
+
+    <form action="/" method="post">
+      <div><textarea name="content" rows="20" cols="100">{{content|default:"A compiler is a computer program (or set of programs) that transforms source code written in a computer language (the source language) into another computer language (the target language, often having a binary form known as object code). The most common reason for wanting to transform source code is to create an executable program. The name compiler is primarily used for programs that translate source code from a high-level programming language to a lower level language (e.g., assembly language or machine language). A program that translates from a low level language to a higher level one is a decompiler. A program that translates between high-level languages is usually called a language translator, source to source translator, or language converter. A language rewriter is usually a program that translates the form of expressions without a change of language. A compiler is likely to perform many or all of the following operations: lexical analysis, preprocessing, parsing, semantic analysis, code generation, and code optimization. The term compiler-compiler is sometimes used to refer to a parser generator, a tool often used to help create a compiler."}}</textarea></div>
+      <div><input type="submit" value="Get text"></div>
+    </form>
+
+    {% for t in tags %}
+        {{t}}
+    {%endfor%}<br>
+    <small>Generated in {{time}} ms</small>
+    
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7053226-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+  </body>
+</html>
